@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.png" width="128" alt="Boost by Numio logo"></p>
+
 # Boost by Numio
 
 A simple, open-source volume booster for Android. Turn it on, slide the boost up, and quiet videos, calls and speakers get louder.
