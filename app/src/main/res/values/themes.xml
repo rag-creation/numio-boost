@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NumioBoost" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/numio_bg</item>
+        <item name="android:statusBarColor">@color/numio_bg</item>
+        <item name="android:navigationBarColor">@color/numio_bg</item>
+    </style>
+    <color name="numio_bg">#FF111111</color>
+    <color name="numio_yellow">#FFFFC107</color>
+</resources>

@@ -1,0 +1,13 @@
+Boost makes quiet videos, calls and speakers louder.
+
+Turn it on, slide the boost up, and it raises the sound of every app using Android's built-in loudness effect.
+
+<ul>
+<li>One big on/off button and a Quick Settings tile</li>
+<li>Volume and Boost sliders on one screen</li>
+<li>Up to +12 dB, or +24 dB with Higher boost</li>
+<li>Runs in the background with a notification to stop it</li>
+<li>No ads, no tracking, no internet permission</li>
+</ul>
+
+Loud sound can damage speakers and hearing. Turn the boost down if you hear crackling.
