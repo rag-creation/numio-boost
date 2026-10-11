@@ -28,7 +28,7 @@ import kotlinx.coroutines.flow.StateFlow
 /** Foreground service that keeps the boost alive while the app is closed. */
 class BoostService : Service() {
 
-    private val engine = BoostEngine()
+    private val engine = BoostEngine { _status.value = it }
     private lateinit var prefs: BoostPrefs
 
     private val prefListener = SharedPreferences.OnSharedPreferenceChangeListener { _, _ ->
@@ -77,7 +77,6 @@ class BoostService : Service() {
         if (_running.value) return START_STICKY
 
         engine.start(prefs.gainMb())
-        _globalAvailable.value = engine.globalAvailable
         prefs.prefs.registerOnSharedPreferenceChangeListener(prefListener)
         ContextCompat.registerReceiver(
             this,
@@ -107,6 +106,7 @@ class BoostService : Service() {
             }
         }
         engine.release()
+        _status.value = BoostStatus()
         _running.value = false
         refreshTile()
         super.onDestroy()
@@ -166,8 +166,8 @@ class BoostService : Service() {
         private val _running = MutableStateFlow(false)
         val running: StateFlow<Boolean> = _running
 
-        private val _globalAvailable = MutableStateFlow(true)
-        val globalAvailable: StateFlow<Boolean> = _globalAvailable
+        private val _status = MutableStateFlow(BoostStatus())
+        val status: StateFlow<BoostStatus> = _status
 
         fun start(context: Context) {
             ContextCompat.startForegroundService(context, Intent(context, BoostService::class.java))
