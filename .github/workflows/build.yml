@@ -20,8 +20,6 @@ jobs:
           distribution: temurin
           java-version: "21"
 
-      - uses: android-actions/setup-android@v3
-
       - uses: gradle/actions/setup-gradle@v4
 
       # Release signing: only used when the NUMIO_KEYSTORE_BASE64 secret exists.
