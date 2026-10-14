@@ -24,7 +24,7 @@ Loud sound can damage speakers and hearing. If you hear crackling, turn the boos
 
 ## Download
 
-Grab the APK from [Releases](https://github.com/rag-creation/numio-boost/releases).
+Grab the APK from [Releases](https://github.com/rag-creation/numio-decibel/releases).
 
 ## Built with
 

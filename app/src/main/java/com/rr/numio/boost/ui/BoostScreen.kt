@@ -65,7 +65,7 @@ import com.rr.numio.boost.engine.BoostPrefs
 import com.rr.numio.boost.engine.BoostService
 import kotlin.math.roundToInt
 
-private const val SOURCE_URL = "https://github.com/rag-creation/numio-boost"
+private const val SOURCE_URL = "https://github.com/rag-creation/numio-decibel"
 private val Warm = Color(0xFFE5734B)
 
 @Composable
