@@ -22,7 +22,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.rr.numio.boost"
+        applicationId = "com.rr.numio.decibel"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

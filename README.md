@@ -1,8 +1,8 @@
-<p align="center"><img src="logo.png" width="128" alt="Boost by Numio logo"></p>
+<p align="center"><img src="logo.png" width="128" alt="Decibel: Volume Booster logo"></p>
 
-# Boost by Numio
+# Decibel: Volume Booster
 
-A simple, open-source volume booster for Android. Turn it on, slide the boost up, and quiet videos, calls and speakers get louder.
+Decibel by Numio is a simple, open-source volume booster for Android. Turn it on, slide the boost up, and quiet videos, calls and speakers get louder.
 
 No ads. No tracking. No internet permission.
 
@@ -16,7 +16,7 @@ No ads. No tracking. No internet permission.
 
 ## How it works
 
-Boost uses Android's built-in `LoudnessEnhancer` audio effect. It attaches to the global output mix, and also to any player that announces its audio session, then raises the gain by the amount you choose. Nothing is recorded or sent anywhere.
+Decibel uses Android's built-in `LoudnessEnhancer` audio effect. It attaches to the global output mix, and also to any player that announces its audio session, then raises the gain by the amount you choose. Nothing is recorded or sent anywhere.
 
 ## Safety
 
@@ -32,7 +32,7 @@ Kotlin, Jetpack Compose, Material 3. Minimum Android 8.0 (API 26).
 
 ## Part of Numio
 
-Boost is part of the [Numio](https://getnumio.org) family of open-source Android apps, alongside Numio Calculator, Clock by Numio and Ezhuthola.
+Decibel is part of the [Numio](https://getnumio.org) family of open-source Android apps, alongside Numio Calculator, Clock by Numio, Notes by Numio and Ezhuthola.
 
 ## About
 

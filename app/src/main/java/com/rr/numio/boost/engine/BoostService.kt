@@ -139,7 +139,7 @@ class BoostService : Service() {
         val db = prefs.gainMb() / 100f
         return NotificationCompat.Builder(this, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_boost)
-            .setContentTitle("Boost is on")
+            .setContentTitle("Decibel is on")
             .setContentText("Boost ${prefs.boostPercent}%  (+${"%.1f".format(db)} dB)")
             .setContentIntent(open)
             .addAction(0, "Stop", stop)

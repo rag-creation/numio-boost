@@ -138,7 +138,7 @@ fun BoostScreen() {
             )
             Spacer(Modifier.width(12.dp))
             Column {
-                Text("Boost", color = NumioText, fontSize = 22.sp, fontWeight = FontWeight.Bold)
+                Text("Decibel", color = NumioText, fontSize = 22.sp, fontWeight = FontWeight.Bold)
                 Text("by Numio", color = accent, fontSize = 11.sp, fontFamily = FontFamily.Monospace)
             }
         }
@@ -219,9 +219,9 @@ fun BoostScreen() {
             }) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Column(Modifier.weight(1f)) {
-                        Text("Keep Boost running", color = NumioText, fontSize = 16.sp)
+                        Text("Keep Decibel running", color = NumioText, fontSize = 16.sp)
                         Text(
-                            "Some phones stop Boost in the background to save battery. Tap to allow it.",
+                            "Some phones stop Decibel in the background to save battery. Tap to allow it.",
                             color = NumioMuted, fontSize = 13.sp
                         )
                     }

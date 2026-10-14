@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Boost</string>
-    <string name="tile_label">Boost</string>
-    <string name="channel_name">Boost running</string>
+    <string name="app_name">Decibel</string>
+    <string name="tile_label">Decibel</string>
+    <string name="channel_name">Decibel running</string>
 </resources>

@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NumioBoost"
+rootProject.name = "NumioDecibel"
 include(":app")

@@ -1,4 +1,4 @@
-Boost makes quiet videos, calls and speakers louder.
+Decibel is a simple volume booster that makes quiet videos, calls, music and speakers louder. No ads, no tracking, no internet permission.
 
 Turn it on, slide the boost up, and it raises the sound of every app using Android's built-in loudness effect.
 

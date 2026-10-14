@@ -45,9 +45,9 @@ jobs:
       - name: Name the APK
         run: |
           if [[ "$GITHUB_REF" == refs/tags/v* ]]; then
-            NAME="NumioBoost-${GITHUB_REF_NAME}.apk"
+            NAME="Decibel-${GITHUB_REF_NAME}.apk"
           else
-            NAME="NumioBoost-test.apk"
+            NAME="Decibel-test.apk"
           fi
           cp app/build/outputs/apk/release/app-release.apk "$NAME"
           echo "APK_NAME=$NAME" >> "$GITHUB_ENV"

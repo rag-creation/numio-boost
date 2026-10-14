@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- No INTERNET permission: Boost never goes online. -->
+    <!-- No INTERNET permission: Decibel never goes online. -->
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <!-- Lets the user exempt Boost from battery optimisation (Realme/Oppo/Xiaomi kill it otherwise). -->
+    <!-- Lets the user exempt Decibel from battery optimisation (Realme/Oppo/Xiaomi kill it otherwise). -->
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
 
     <application
