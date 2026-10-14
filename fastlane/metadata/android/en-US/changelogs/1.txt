@@ -1,1 +1,5 @@
-First release.
+First release of Decibel: Volume Booster.
+- One big button to turn the boost on or off, plus a Quick Settings tile
+- Boost up to +12 dB, or +24 dB with Higher boost
+- Keeps working in the background, with a notification to stop it
+- No ads, no tracking, no internet permission
