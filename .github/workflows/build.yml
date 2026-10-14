@@ -38,6 +38,7 @@ jobs:
           NUMIO_KEYSTORE_PASSWORD: ${{ secrets.NUMIO_KEYSTORE_PASSWORD }}
           NUMIO_KEY_ALIAS: ${{ secrets.NUMIO_KEY_ALIAS }}
           NUMIO_KEY_PASSWORD: ${{ secrets.NUMIO_KEY_PASSWORD }}
+          DEBUG_SIGN_FALLBACK: "1"
         run: |
           chmod +x gradlew
           ./gradlew --no-daemon assembleRelease
@@ -49,7 +50,7 @@ jobs:
           else
             NAME="Decibel-test.apk"
           fi
-          cp app/build/outputs/apk/release/app-release.apk "$NAME"
+          cp app/build/outputs/apk/release/app-release*.apk "$NAME"
           echo "APK_NAME=$NAME" >> "$GITHUB_ENV"
 
       - uses: actions/upload-artifact@v4

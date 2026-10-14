@@ -8,8 +8,7 @@ plugins {
 }
 
 // Release signing is read from keystore.properties (local, never committed)
-// or from environment variables (GitHub Actions). If neither is present,
-// the release build falls back to the debug key so it still installs.
+// or from environment variables. If neither is present, the release build is unsigned.
 val keystoreProps = Properties().apply {
     val f = rootProject.file("keystore.properties")
     if (f.exists()) f.inputStream().use { load(it) }
@@ -46,7 +45,10 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.findByName("release") ?: signingConfigs.getByName("debug")
+            // Unsigned unless the Numio key is configured (F-Droid and the Mac release build
+            // sign it afterwards). GitHub test builds set DEBUG_SIGN_FALLBACK so they still install.
+            signingConfig = signingConfigs.findByName("release")
+                ?: if (System.getenv("DEBUG_SIGN_FALLBACK") != null) signingConfigs.getByName("debug") else null
         }
     }
 
